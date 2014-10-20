@@ -31,3 +31,6 @@
 # Eclipse Files
 .project
 .cproject
+.settings
+DEBUG
+RELEASE
