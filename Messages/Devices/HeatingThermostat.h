@@ -14,11 +14,11 @@
 namespace MAXCPP {
 enum ThermostatModes
 {
-	automatic,
-	manual,
-	vacation,
-	boost,
-	unchanged
+	THERMO_automatic,
+	THERMO_manual,
+	THERMO_vacation,
+	THERMO_boost,
+	THERMO_unchanged
 };
 
 class HeatingThermostat: public MAXCPP::IMAXDevice {

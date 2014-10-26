@@ -14,9 +14,9 @@ namespace MAXCPP {
 
 enum ShutterContactModes
 {
-	closed,
-	open,
-	unchanged
+	SHUTTER_closed,
+	SHUTTER_open,
+	SHUTTER_unchanged
 };
 
 

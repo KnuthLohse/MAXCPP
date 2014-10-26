@@ -14,15 +14,15 @@ std::string HeatingThermostat::modeToString(ThermostatModes mode)
 {
 	switch (mode)
 	{
-	case automatic:
+	case THERMO_automatic:
 		return "Automatic";
-	case manual:
+	case THERMO_manual:
 		return "Manual";
-	case vacation:
+	case THERMO_vacation:
 		return "Vacation";
-	case boost:
+	case THERMO_boost:
 		return "Boost";
-	case unchanged:
+	case THERMO_unchanged:
 		return "Unchanged";
 	default:
 		return "Undefined";
@@ -37,7 +37,7 @@ HeatingThermostat::HeatingThermostat() :IMAXDevice(HeatingThermostatType),
 		valid(false),
 		isAnswer(false),
 		linkError(false),
-		mode(unchanged),
+		mode(THERMO_unchanged),
 		validUntil(0),
 		temperature(0)
 {

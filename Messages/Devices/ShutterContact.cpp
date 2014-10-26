@@ -16,11 +16,11 @@ std::string ShutterContact::shutterModeToString(ShutterContactModes mode)
 {
 	switch (mode)
 	{
-	  case (open):
+	  case (SHUTTER_open):
 			  return "Open";
-	  case (closed):
+	  case (SHUTTER_closed):
 			  return "Closed";
-	  case (unchanged):
+	  case (SHUTTER_unchanged):
 			  return "Unchanged";
 	  default:
 		  	  return "Undefined";
@@ -35,7 +35,7 @@ ShutterContact::ShutterContact() : IMAXDevice(ShutterContactType),
 		valid(false),
 		isAnswer(false),
 		linkError(false),
-		shutterState(unchanged)
+		shutterState(SHUTTER_unchanged)
 {
 }
 
